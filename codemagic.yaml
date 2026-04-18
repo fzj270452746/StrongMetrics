@@ -11,7 +11,7 @@ workflows:
         bundle_identifier: com.sme.StrongMetric
       vars:
         BUNDLE_ID: $bundle_identifier
-        PROJECT_PATH: "DesignerRTP" #5:工程名称
+        PROJECT_PATH: "StrongMetrics" #5:工程名称
         XCODE_WORKSPACE: "$PROJECT_PATH/$PROJECT_PATH.xcworkspace"
         XCODE_SCHEME: $PROJECT_PATH
         APP_STORE_APPLE_ID: 6762513198
