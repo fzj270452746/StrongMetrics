@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"import SpriteKit\" /Users/hades/Desktop/Code/26/04/0410-2/StrongMetrics/StrongMetrics/UI/Canvas/*.swift)",
+      "Bash(xcodebuild -project StrongMetrics.xcodeproj -scheme StrongMetrics -destination 'platform=iOS Simulator,name=iPhone 16' -configuration Debug build)",
+      "Bash(xcodebuild -scheme StrongMetrics -destination 'platform=iOS Simulator,name=iPhone 16 Pro' build)"
+    ]
+  }
+}

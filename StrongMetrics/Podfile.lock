@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.11.1)
+  - AppsFlyerFramework (6.17.9):
+    - AppsFlyerFramework/Main (= 6.17.9)
+  - AppsFlyerFramework/Main (6.17.9)
+  - SDWebImage (5.21.7):
+    - SDWebImage/Core (= 5.21.7)
+  - SDWebImage/Core (5.21.7)
+
+DEPENDENCIES:
+  - Alamofire
+  - AppsFlyerFramework
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppsFlyerFramework
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: eec6cd8f73b242b59e34153a606a909eb9864b14
+  AppsFlyerFramework: 4f9a8237d40e9093941aef760cd77d606238aedd
+  SDWebImage: e9fc87c1aab89a8ab1bbd74eba378c6f53be8abf
+
+PODFILE CHECKSUM: 7a09bb527ddfd4d6d22e8677ef05a8c539e70b57
+
+COCOAPODS: 1.16.2
