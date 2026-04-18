@@ -39,15 +39,17 @@ class YieldCalculator {
 
             for tier in glyph.payoutTiers {
                 guard tier.matchCount >= 3 else { continue }
+                let effectiveMatchCount = min(tier.matchCount, cols)
+                guard effectiveMatchCount > 0 else { continue }
                 // Probability of hitting this glyph on `matchCount` consecutive columns
                 var probability = 1.0
-                for c in 0..<min(tier.matchCount, cols) {
+                for c in 0..<effectiveMatchCount {
                     let spoolWeight = totalWeightPerSpool[c]
                     let glyphWeight = Double(layout.spools[c].weightFor(glyphId: glyph.riftId))
                     probability *= spoolWeight > 0 ? glyphWeight / spoolWeight : 0
                 }
                 // Remaining cols = non-matching
-                for c in tier.matchCount..<cols {
+                for c in effectiveMatchCount..<cols {
                     let spoolWeight = totalWeightPerSpool[c]
                     let glyphWeight = Double(layout.spools[c].weightFor(glyphId: glyph.riftId))
                     let nonMatchProb = spoolWeight > 0 ? (spoolWeight - glyphWeight) / spoolWeight : 1.0
